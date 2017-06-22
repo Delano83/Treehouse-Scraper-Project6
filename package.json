@@ -1,0 +1,18 @@
+{
+  "name": "scrapeme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrape.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scrape.js",
+    "clean": "node clean.js"
+  },
+  "author": "Anonymous",
+  "license": "ISC",
+  "dependencies": {
+    "json2csv": "^3.7.3",
+    "x-ray": "^2.3.2"
+  }
+}
+
