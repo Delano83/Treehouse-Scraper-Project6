@@ -3,7 +3,7 @@ var fs = require('fs');
 var json2csv = require('json2csv');
 var Xray = require('x-ray');
 var x = Xray();
-var fields = ['Title','Price', 'URL', 'Image URL'];
+var fields = ['Title','Price', 'Image URL', 'URL', 'Time'];
  
 var url = 'http://www.shirts4mike.com/'; 
 var date = new Date();
