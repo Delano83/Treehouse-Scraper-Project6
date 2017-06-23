@@ -68,7 +68,7 @@ getShirtData.then(data => {
   }
 
   // create the output file name string based on the specified project naming convention
-  var outputFileName = 'data' + '/' + [leadingZero(day), leadingZero(month), year].join('-') + '.csv';
+  var outputFileName = 'data' + '/' + [year, leadingZero(month), leadingZero(day)].join('-') + '.csv';
 
   // check if files exist in the data folder and remove them
  if (fs.readdirSync('data')) {
