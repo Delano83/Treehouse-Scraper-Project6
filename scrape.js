@@ -30,7 +30,9 @@ x(url + 'shirt.php',  '.products', ['a@href'])(function(error, shirtURL) {
 
         data.URL = shirtURI;
         data.Title = data.Title.replace(data.Price + ' ', '');
-        data.Time = date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+        data.Time = date.toISOString().substring(0, 10);
+  
+       
         
         //push the data to the array
         shirtArray.push(data);
